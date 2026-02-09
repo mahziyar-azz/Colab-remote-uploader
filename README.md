@@ -29,4 +29,4 @@ A simple Google Colab notebook that mounts Google Drive and downloads a file int
 - If Drive isn’t mounted, Cell 2 will print an error.
 
 ## License
-MIT (add a LICENSE file if you want to specify a different license).
+MIT. See `LICENSE`.
