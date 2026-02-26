@@ -19,22 +19,24 @@ A robust, Object-Oriented Google Colab notebook that securely mounts Google Driv
 - A Google Account with Google Colab and Google Drive.
 - Internet access to the target download URL.
 - Python 3 environment (built into Colab) with standard libraries (`os`, `time`, `logging`, `urllib`).
-- External packages (pre-installed in Colab): `requests`, `tqdm`, `google-auth`, `google-api-python-client`.
 
 ## 🚀 Usage
 
 1. Open `remote_uploader.ipynb` in Google Colab.
-2. **Run Cell 1:** This will prompt you to mount Google Drive. Follow the popup to authorize access to your account.
+2. ### **Run Cell 1:** 
+This will prompt you to mount Google Drive. Follow the popup to authorize access to your account.
 3. **Configure Cell 2 (Using the right-hand panel):**
    - `url`: Paste the direct download link of the file.
    - `keep_original_name`: Check this box to let the script automatically extract the file's real name from the server.
    - `custom_file_name`: If you uncheck the box above, type your desired filename here (include the extension, e.g., `.zip` or `.exe`).
    - `create_public_link`: Check this box if you want the script to use the Drive API to generate a direct download URL after finishing.
-4. **Run Cell 2:** The script will download the file directly to `My Drive/remote upload/`, verify the file size, and output your shareable link!
+
+4. ### **Run Cell 2:** 
+The script will download the file directly to `My Drive/remote upload/`, verify the file size, and output your shareable link!
 
 ## 📝 Notes
 - The default destination is `My Drive/remote upload/`. You can change the `base_folder` variable in the `SecureDownloader` class to target a different directory.
 - Generating a public link requires a secondary, one-time API authentication popup during the first run of the session.
 
 ## 📜 License
-MIT. See the `LICENSE` file for more details.
+under MIT. LICENSE
