@@ -25,6 +25,7 @@ A robust, Object-Oriented Google Colab notebook that securely mounts Google Driv
 1. Open `remote_uploader.ipynb` in Google Colab.
 2. ### **Run Cell 1:** 
 This will prompt you to mount Google Drive. Follow the popup to authorize access to your account.
+
 3. **Configure Cell 2 (Using the right-hand panel):**
    - `url`: Paste the direct download link of the file.
    - `keep_original_name`: Check this box to let the script automatically extract the file's real name from the server.
